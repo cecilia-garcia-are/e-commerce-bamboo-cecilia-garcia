@@ -1,0 +1,80 @@
+:root {
+    --dark-mode-toggle-icon-size: 1.5rem;
+    --background-color: hsl(0, 0%, 11%); 
+  --primary-color: hsl(86, 54%, 48%);
+  --text-color: hsl(0, 0%, 100%);
+  --title-color: hsl(0, 0%, 100%);
+  --bg-color:  hsl(0, 0%, 11%);
+  --card-color: hsl(0, 4%, 31%);
+  --sec-bg-color:background-color .3s ease-in-out
+
+}
+
+
+body {
+    background-color: hsl(0, 0%, 11%);
+   
+}
+
+
+  .header {
+    background-color: hsl(0, 0%, 11%);
+  }
+
+
+  @media (max-width: 768px) {
+    .nav__menu {
+      
+      background-color: var(--background-color);
+    }
+  }
+  
+
+  .nav__menu .btn--close {
+    color: var(--title-color);
+  }
+
+
+  .nav__btn i {
+    color: var(--title-color);
+  }
+
+  .product__image {
+    background-color: var(--card-color);
+  }
+
+  .product__content {
+    background-color: var(--bg-color);
+   
+  }
+
+  .product__btn {
+    background-color: var(--primary-color);
+    
+  }
+
+  .cart {
+    background-color: var(--bg-color);
+    
+  }
+
+  .btn--close {
+    color:var(--title-color)
+
+  }
+  .btn--cart {
+    color: var(--title-color);
+  }
+
+  .add--to--cart {
+    color: var(--title-color);
+  }
+  
+  .footer__link {
+    color: var(--title-color);
+    background-color: var(--primary-color);
+    
+  }
+
+  
+  

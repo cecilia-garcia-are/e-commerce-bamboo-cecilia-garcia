@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo Shop</title>
+    <link rel="shortcut icon" href="assets/img/bamboo-icon.png" type="image/x-icon">
+    <!-- FONTS PRIMERO VAN LAS FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <!-- BOXICONS NO OLVIDAR COLOCAR -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--CSS LINK AL FINAL-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: ligth)" href="assets/css/ligth.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/css/dark.css">
+    <!--JS-->
+    <script src="assets/js/main.js" type="module" defer></script>
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+    
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader__container">
+      <span></span>
+    </div>
+  </div>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="/" class="nav__logo">
+        <img src="assets/img/logo-verde.svg" class="logo--icon">
+          <path fill="currentColor"
+                    d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+          </path>
+        </s>    
+      </a>
+      <div class="nav__menu">
+        <button type="button" class="nav__btn btn--close">
+          <i class='bx bx-x-circle'></i>
+        </button>
+        <!--MENU DE NAVEGACION-->
+        <ul class="nav__list">
+          <li class="nav__items">
+            <a href="#" class="nav__link">Inicio</a></li>
+          <li class="nav__items">
+            <a href="#" class="nav__link">Servicios</a></li>
+          <li class="nav__items">
+            <a href="#" class="nav__link">Nosotros</a></li>
+          <li class="nav__items">
+              <a href="#" class="nav__link">Contacto</a></li>
+        </ul>
+      </div>
+      
+      <dark-mode-toggle
+      id="dark-mode-toggle-1"
+      appearance="toggle"
+      dark="Nocturno"
+      light="Día">
+    </dark-mode-toggle>
+      
+    
+      <!--BOTONES BARRA DE MENU-->
+      <div class="nav__buttons">
+        <button type="button" class="nav__btn btn--cart">
+          <i class='bx bx-shopping-bag'></i>
+          <span class="notify">0</span>
+        </button>
+        <button type="button" class="nav__btn btn--menu">
+          <i class='bx bx-menu' ></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main class="main">
+    <section class="products section">
+      <h2 class="products__title section--title">Productos</h2>
+      <div class="products__container container">
+        <article class="product">
+         <div class="product__image">
+          <img src="assets/img/taza-piña.png" alt="Taza con diseño de piña">
+         </div>
+         <div class="product__content">
+          <button type="button" class="product  btn add--to--cart">
+            <i class='bx bx-cart'></i>
+          </button>
+          <span class="product__price">$ 120.00</span>
+          <span class="product__stock">Disponibles: 8</span>
+          <span class="product__description">Taza para los amantes de las piñas</span>
+        <!--MODAL-->
+        
+        
+      </div>
+        </article>
+        
+    <!--Producto 2-->
+        <article class="product">
+          <div class="product__image">
+           <img src="assets/img/taza-sandia.png" alt="Taza con diseño de sandia">
+          </div>
+          <div class="product__content">
+           <button type="button" class="product  btn add--to--cart">
+            <i class='bx bx-cart'></i>
+           </button>
+           <span class="product__price">$ 120.00</span>
+           <span class="product__stock">Disponibles: 5</span>
+           <span class="product__description">Taza fresca de sandias</span>         
+           
+           
+          </div>
+         </article>
+    <!--Producto 3-->
+         <article class="product">
+          <div class="product__image">
+           <img src="assets/img/taza-amor.png" alt="Taza con diseño de buhos enamorados">
+          </div>
+          <div class="product__content">
+           <button type="button" class="product  btn add--to--cart">
+            <i class='bx bx-cart'></i>
+           </button>
+           <span class="product__price">$ 200.00</span>
+           <span class="product__stock">Disponibles: 6</span>
+           <span class="product__description">Duo enamorados, con diseño de buhos</span> 
+          </div>
+         </article>
+    <!--Producto 4-->
+         <article class="product">
+          <div class="product__image">
+           <img src="assets/img/taza-flocrece.png" alt="Taza con Florece">
+          </div>
+          <div class="product__content">
+           <button type="button" class="product  btn add--to--cart">
+            <i class='bx bx-cart'></i>
+           </button>
+           <span class="product__price">$ 180.00</span>
+           <span class="product__stock">Disponibles: 2 </span>
+           <span class="product__description">Taza con frase motivacional</span>
+          </div>
+         </article>
+
+        <!--PRODUCTO 5 -->
+       
+        <article class="product">
+          <div class="product__image">
+           <img src="assets/img/taza-luna.png" alt="Taza hasta la luna">
+          </div>
+          <div class="product__content">
+           <button type="button" class="product  btn add--to--cart">
+            <i class='bx bx-cart'></i>
+           </button>
+           <span class="product__price">$ 150.00</span>
+           <span class="product__stock">Disponibles: 6 </span>
+           <span class="product__description">Taza Astronauta Hasta la Luna</span>
+          </div>
+         </article>
+<!--PRODUCTO EDICION ESPECIAL-->
+         <article class="product 5">
+          <div class="product__image">
+           <img src="assets/img/taza-patricio.png" alt="Edicion especial">
+          </div>
+          <div class="product__content">
+           <button type="button" class="product  btn add--to--cart">
+            <i class='bx bx-cart'></i>
+           </button>
+           <span class="product__price">$ 250.00</span>
+           <span class="product__stock">Disponibles: 10</span>
+           <span class="product__description">Taza Edicion especial Patricio Estrella</span> 
+          </div>
+         </article>
+      </div>
+    </section>
+  </main>
+   <!--CARRITO-->
+   <div class="cart">
+    <div class="cart__container">
+      <div class="cart__header">
+       <h3>Carrito de compras</h3>
+       <button type="button" class="cart__btn btn--close">
+        <i class='bx bx-x-circle'></i>
+       </button>
+      </div>
+       <div class="cart__body"></div>
+      <div class="cart__footer">
+       <div class="cart__count">
+        <span class="cart__count--text">Articulos</span>
+        <span class="cart__count--item">0</span>
+       </div>
+       <div class="cart__total">
+        <span class="cart__count--text">Total</span>
+        <span class="cart__total--item">$0</span>
+       </div>
+       <button type="button" class="cart__btn btn--buy"><h3>Comprar</h3></button>
+    </div>
+  </div>
+</div>
+
+  <!--FOOTER-->
+
+  <footer class="footer section">
+    <div class="footer__container container">
+      <div class="footer__top">
+        <div class="footer__left">
+          <h3 class="footer__title">Sobre Nosotros</h3>
+          <p>Somos una empresa que se dedica al la personalización de productos. Ademas contamos con servicios de Diseño Gráfico.</p>
+          <h3 class="footer__text">Descripcion sobre mi y mi nombre</h3>
+          <p>Soy Cecilia Garcia, me dedico al Diseño Gráfico, estudie mi licenciatura en UVM Campus Texcoco, me gustaria mucho aprender a programar, ya que quiero ser mas independiente economicamente
+            como laboralmente. Me encantaria poder decir en algunos meses que haber tomado este curso ha sido mi mejor decisión en mucho tiempo. Gracias por la paciencia.</p>
+
+        </div>
+        <div class="footer__right">
+          <h3 class="footer__title">Redes Sociales</h3>
+          <ul class="footer__social">
+            <li class="footer__item">
+              <a href="https://instagram.com/bamboodesignmx?igshid=MzRlODBiNWFlZA==" target="_blank" class="footer__link">
+                <i class='bx bxl-instagram'></i>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="https://www.facebook.com/bamboodesignmx/" target="_blank"  class="footer__link">
+                <i class='bx bxl-facebook'></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__text">Productos artesanales hechos con amor</p>
+    </div>
+  </footer>
+
+
+  
+</body>
+</html>
